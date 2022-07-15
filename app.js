@@ -4,7 +4,7 @@ const random = Math.floor((Math.random() * 5));
 
 let pregunta = []
 let respuestaSeleccionada
-let nivel = parseInt(window.localStorage.getItem('lvl', 0))
+let nivel = parseInt(window.localStorage.getItem('lvl'))
 switch (nivel) {
     case 0:
         pregunta = preguntasLVL1[random]
@@ -58,7 +58,9 @@ container.innerHTML = `
         </div>
     </div>
     <div class="mt-5 mb-5">
-        <button class="btn btn-success" id="next">Continuar</button>
+        <button class="btn btn-success" id="next">Validar respuesta</button>
+        <button class="btn btn-primary" id="init">Iniciar NIVEL 1</button>
+
     </div>
 </div>
 </div>
@@ -82,8 +84,6 @@ const on = (element, event, selector, handler) => {
 
 on(document, "click", ".elemento", (e) => {
     respuestaSeleccionada = e.target.textContent;
-    console.log(respuestaSeleccionada);
-    console.log(pregunta.respuesta);
 
 });
 /**
@@ -124,6 +124,13 @@ const changeLVL = () => {
  * @author Andrés Camilo Díaz Merlano
  * @since 1.0.0
  */
+
+const restarLVL = () => {
+    nivel = window.localStorage.setItem('lvl', 0)
+    location.reload()
+}
 const nextPage = document.querySelector('#next')
 nextPage.addEventListener('click', changeLVL)
-console.log("nivel: ", nivel)
+
+const initLVL = document.querySelector('#init')
+initLVL.addEventListener('click', restarLVL)
