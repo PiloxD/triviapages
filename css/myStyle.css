@@ -1,0 +1,19 @@
+body {
+    background-image: url('https://img.freepik.com/vector-gratis/participantes-felices-jugando-al-juego-preguntas-programa-television-anfitrion-microfono-haciendo-preguntas_74855-10770.jpg?t=st=1657866237~exp=1657866837~hmac=5a58761b656f9fd1ebff53c012bf6c803acdd32eacdc2ecea69bd468c626433a&w=1060');
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius:  50px;
+}
