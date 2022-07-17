@@ -17,3 +17,5 @@ Para jugar debes ingresar en el enlace de la aplicación, luego puedes darle ini
 Nota:
 - Se han reparado bugs luego de desplegar.
 - En caso tal de tener inconvenientes debes recargar la página.
+
+Link de presentación del proyecto: https://youtu.be/eGDn5NoyG1U
